@@ -87,12 +87,6 @@ public class SendingEmailServiceImpl implements SendingEmailService {
         Map<String, String> emails = new HashMap<>();
         emails.put("adelina.apetrei26@gmail.com", "Adelina");
         emails.put("apetreiadelina@gmail.com", "Adelina");
-        emails.put("andreihga@gmail.com", "Andrei");
-        emails.put("gogoi.victorita@gmail.com", "Andreea");
-        emails.put("hogearita63@gmail.com", "Rita");
-        emails.put("robert.neculaes@gmail.com", "Robi");
-        emails.put("eegiurgica@gmaill.com", "Adrian");
-        emails.put("madalin.neculaes@gmail.com", "Mada");
         for(Map.Entry<String, String> email : emails.entrySet()){
             sendChristmasEmail(mailModel, email.getValue(), email.getKey());
         }
